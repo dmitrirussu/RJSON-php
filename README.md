@@ -41,9 +41,10 @@ stdObj('title' => 'Php', 'author' => 'Grim', 'year' => 2000),
 stdObj('title' => 'JavaScrip', 'author' => 'Flanagan', 'year' => 2006))
 );
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 RJson result compact json or one compact php array():
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 { "id": 7,
 "tags": ["programming", "javascript"],
 "users": [
