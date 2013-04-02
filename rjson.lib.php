@@ -99,7 +99,6 @@ RJson result compact json or one compact php array():
  *
  */
 
-
 class RJson {
 
 	private static $schemas = array();
