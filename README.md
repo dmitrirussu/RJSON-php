@@ -1,6 +1,5 @@
 RJSON-php
 =========
-/**
 
 PHP5 RJson Version 0.0.1
 
@@ -98,5 +97,3 @@ console.log(result);
 *
 * RJson is a good practice to use on your Applications which make requests at server for obtains a big data
 * to client Application.
-*
-*/
