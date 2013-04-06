@@ -1,6 +1,6 @@
 RJSON-php VS RJSON-js
 =========
-Compress Array data and Json Data until 60%!
+Compress Array data and Json data until 60%!
 ===
     ---------------------------------------------------------------------------------------
     JavaScrip RJSON release https://github.com/dogada/RJSON from Dmytro Dogadailo.
