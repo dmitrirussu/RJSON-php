@@ -1,15 +1,28 @@
-RJSON-php VS RJSON-js
-=========
-Compress Array data and Json data until 60%!
-===
-    ---------------------------------------------------------------------------------------
-    JavaScrip RJSON release https://github.com/dogada/RJSON from Dmytro Dogadailo.
-    ---------------------------------------------------------------------------------------
-====
 PHP5 RJson Version 0.0.1
 ===
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
+
+RJSON-php VS RJSON-js
+=========
+Compress Array data and Json data until 60%!
+
+How begin to use PHP RJSON example:
+
+    $data = //Your recursive Array data;
+    $pack = RJson::pack($data);
+    $unpack = RJson::unpack($pack);
+    
+How begin to use JavaScript RJSON example: 
+
+    data = //jason packedge from php;
+    unpack = RJSON.unpack(data);
+    packAndSendToSerevr = RJSON.pack(unpack);
+...
+
+    ---------------------------------------------------------------------------------------
+    JavaScrip RJSON release https://github.com/dogada/RJSON from Dmytro Dogadailo.
+    ---------------------------------------------------------------------------------------
 
 RJson converts any Array data collection into more compact recursive
 form. Compressed data is still JSON and can be parsed with `JSON.parse`. RJson
