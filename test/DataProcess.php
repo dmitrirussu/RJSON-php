@@ -22,7 +22,9 @@ class DataProcess {
 }
 
 //Call function
-call_user_func($_GET['action'], (isset($_POST['pack_data']) ? $_POST['pack_data'] : null));
+if(isset($_GET['action'])) {
+	call_user_func($_GET['action'], (isset($_POST['pack_data']) ? $_POST['pack_data'] : null));
+}
 
 function get_data() {
 	print DataProcess::getData();
@@ -31,9 +33,9 @@ function get_data() {
 
 function save_data($data) {
 	if (DataProcess::saveData($data)) {
-		print 'success';
+		print 'With Success data unpack and saved!';
 		exit;
 	}
-	print "Data can't save!";
+	print "Data can't unpack save!";
 	exit;
 }

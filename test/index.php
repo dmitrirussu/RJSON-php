@@ -23,12 +23,9 @@
 				"url": "DataProcess.php?action=save_data",
 				"data": {"pack_data": packData},
 				"success": function(response) {
-					//respond
 					console.log(response);
 				}
 			});
-
-
 		}
 	});
 
