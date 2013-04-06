@@ -1,4 +1,4 @@
-PHP5 RJson Version 0.0.1
+PHP5 RJson Version 0.1.1
 ===
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
@@ -34,61 +34,61 @@ structure.
 Below you can see initial form!
 
     Array:
-   $data['data_process'] = array(
-   		'template' => array('layers' => array(
-   								'layer_id_one' => array('age' => 23,'name' => 'Robert',  'height' => 187),
-   								'layer_id_two' => array('name' => 'Andre', 'age' => 24, 'height' => 188),
-   							),
-   							'themes_one' => array(
-   								'theme_id_one' => array('name' => 'Green', 'width' => 11),
-   								'theme_id_two' => array('name' => 'Yellow', 'width' => 12),
-   							),
-   							'themes_two' => array(
-   								'theme_id_one' => array('name' => 'Green', 'width' => 11),
-   								'theme_id_two' => array('name' => 'Yellow', 'width' => 12),
-   							),
-   							'designs' => array(
-   								array('title' => 'Design_1', 'width' => 23, 'height' => 187),
-   								array('width' => 24, 'title' => 'Design_2','height' => 181),
-   							)
-   		),
-   		'id' => 7,
-   		'tags' => array('php', 'javascript', 2013, null, false, true),
-   		'users' => array(
-   			array('first' => 'Homer', 'last' => 'Simpson'),
-   			array('first' => 'Hank', 'last' => 'Hill'),
-   		),
-   		'library' => array(
-   			array('title' => 'RJSON-php', 'author' => 'Dmitri Russu', 'year' => 2013),
-   			array('title' => 'JavaScrip RJSON', 'author' => 'Dmytro Dogadailo', 'year' => 2012))
-   		);
+	$data['data_process'] = array(
+	'template' => array('layers' => array(
+	'layer_id_one' => array('age' => 23,'name' => 'Robert',  'height' => 187),
+	'layer_id_two' => array('name' => 'Andre', 'age' => 24, 'height' => 188),
+	),
+	'themes_one' => array(
+	'theme_id_one' => array('name' => 'Green', 'width' => 11),
+	'theme_id_two' => array('name' => 'Yellow', 'width' => 12),
+	),
+	'themes_two' => array(
+	'theme_id_one' => array('name' => 'Green', 'width' => 11),
+	'theme_id_two' => array('name' => 'Yellow', 'width' => 12),
+	),
+	'designs' => array(
+	array('title' => 'Design_1', 'width' => 23, 'height' => 187),
+	array('width' => 24, 'title' => 'Design_2','height' => 181),
+	)
+	),
+	'id' => 7,
+	'tags' => array('php', 'javascript', 2013, null, false, true),
+	'users' => array(
+	array('first' => 'Homer', 'last' => 'Simpson'),
+	array('first' => 'Hank', 'last' => 'Hill'),
+	),
+	'library' => array(
+	array('title' => 'RJSON-php', 'author' => 'Dmitri Russu', 'year' => 2013),
+	array('title' => 'JavaScrip RJSON', 'author' => 'Dmytro Dogadailo', 'year' => 2012))
+	);
 
 RJson result compact json or one compact php array():
 
 
     RJson ENCODED Packedge
-		{"id":7,
-			"library":
-				[{"author":"Dmitri Russu","title":"RJSON-php","year":2013},
-				[3,"Dmytro Dogadailo","JavaScrip RJSON",2012]],
-			"tags":
-				["php","javascript",2013,null,false,true],
-			"template":{
-				"designs":
-					[{"height":187,"title":"Design_1","width":23},
-					[5,181,"Design_2",24]],
-				"layers":{
-					"layer_id_one":{"age":23,"height":187,"name":"Robert"},
-					"layer_id_two":[7,24,188,"Andre"]},
-				"themes_one":
-					{"theme_id_one":{"name":"Green","width":11},
-					"theme_id_two":[9,"Yellow",12]},
-				"themes_two":
-					[8,[9,"Green",11],
-					[9,"Yellow",12]]},
-				"users":
-					[{"first":"Homer","last":"Simpson"},
-					[10,"Hank","Hill"]]}
+	{"id":7,
+		"library":
+			[{"author":"Dmitri Russu","title":"RJSON-php","year":2013},
+			[3,"Dmytro Dogadailo","JavaScrip RJSON",2012]],
+		"tags":
+			["php","javascript",2013,null,false,true],
+		"template":{
+			"designs":
+				[{"height":187,"title":"Design_1","width":23},
+				[5,181,"Design_2",24]],
+			"layers":{
+				"layer_id_one":{"age":23,"height":187,"name":"Robert"},
+				"layer_id_two":[7,24,188,"Andre"]},
+			"themes_one":
+				{"theme_id_one":{"name":"Green","width":11},
+				"theme_id_two":[9,"Yellow",12]},
+			"themes_two":
+				[8,[9,"Green",11],
+				[9,"Yellow",12]]},
+			"users":
+				[{"first":"Homer","last":"Simpson"},
+				[10,"Hank","Hill"]]}
 
 EXAMPLE OF USE RJson:
 
