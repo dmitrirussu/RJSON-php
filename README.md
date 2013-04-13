@@ -5,6 +5,7 @@ RJson return compact recursive data Array or Object Array by Algorithm Dmytro Do
 
 ===
 Compress Array data and Json data until 60%! 
+===
 Don't tell anyone ;)
 ===
 RJSON-php VS RJSON-js
