@@ -4,7 +4,8 @@ Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
 
 ===
-Compress Array data and Json data until 60%! Don't tell anyone ;)
+Compress Array data and Json data until 60%! 
+Don't tell anyone ;)
 ===
 RJSON-php VS RJSON-js
 =========
