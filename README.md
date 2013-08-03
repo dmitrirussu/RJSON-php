@@ -10,16 +10,17 @@ RJSON-php VS RJSON-js
 =========
 
 How begin to use PHP RJSON example:
-
+```php
     $data = //Your recursive Array data;
     $pack = RJson::pack($data);
     $unpack = RJson::unpack($pack);
-    
+```   
 How begin to use JavaScript RJSON example: 
-
+```java
     data = //jason packedge from php;
     unpack = RJSON.unpack(data);
     packAndSendToSerevr = RJSON.pack(unpack);
+```
 ...
 
     ---------------------------------------------------------------------------------------
@@ -32,7 +33,7 @@ can compress not only homogeneous collections, but any data sets with free
 structure.
 
 Below you can see initial form!
-
+```php
     Array:
 	$data['data_process'] = array(
 	'template' => array('layers' => array(
@@ -62,11 +63,12 @@ Below you can see initial form!
 	array('title' => 'RJSON-php', 'author' => 'Dmitri Russu', 'year' => 2013),
 	array('title' => 'JavaScrip RJSON', 'author' => 'Dmytro Dogadailo', 'year' => 2012))
 	);
-
+```
 RJson result compact json or one compact php array():
 
 
     RJson ENCODED Packedge
+```php
 	{"id":7,
 		"library":
 			[{"author":"Dmitri Russu","title":"RJSON-php","year":2013},
@@ -89,11 +91,11 @@ RJson result compact json or one compact php array():
 			"users":
 				[{"first":"Homer","last":"Simpson"},
 				[10,"Hank","Hill"]]}
-
+```
 EXAMPLE OF USE RJson:
 
 You make a call class with one simple single tone request
-
+```php
     $data = array(
     'projects' => Db_Model_Projects::findAllProjects($returnArrayRows),
     'settings' => Db_Model_Settings::findAllSettings($returnArrayRows),
@@ -103,7 +105,8 @@ You make a call class with one simple single tone request
     $compactArrayPackedge = RJson::pack($data);
     
     $compactJsonFormatPackedge = RJson::pack($data, $json = true);
-    
+```
+```html
     $compactJsonFormatPackedge - this packedge you can send to Ajax request Where can make unpack with Js library
     *
     * <scrip language="JavaScript" type="text/javascript" >
