@@ -1,3 +1,8 @@
+<a href="https://travis-ci.org/dmitrirussu/RJSON-php" target="_balank">
+    <img src="https://travis-ci.org/dmitrirussu/RJSON-php.png" data-bindattr-130="130" title="Build Status Images">
+</a>
+
+
 PHP5 RJson Version 0.1.2
 ===
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
