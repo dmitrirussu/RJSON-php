@@ -3,7 +3,7 @@
  * Created by Dumitru Russu.
  * Date: 08.02.2014
  * Time: 14:03
- * ${NAMESPACE}${NAME} 
+ * RJson Test Pack and Unpack Array Data
  */
 
 class RJsonTest extends PHPUnit_Framework_TestCase {
