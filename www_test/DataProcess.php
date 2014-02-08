@@ -6,7 +6,7 @@
  * Time: 10:58 PM
  * To change this template use File | Settings | File Templates.
  */
-require_once '../rjson.lib.php';
+require_once '../lib/RJson.php';
 
 
 class DataProcess {

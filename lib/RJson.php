@@ -53,7 +53,7 @@ RJson result compact json or one compact php array():
 				{"title": "JavaScript", "author": "Flanagan", "year": 2006},
 				[3, "Cascading Style Sheets", "Meyer", 2004]]
 				}
- * TODO EXAMPLE OF USE RJson:
+ * TODO exemple of using RJSON-php:
  * You make a call class with one simple single tone request
  *
  * $data = array(
@@ -232,10 +232,18 @@ class RJson {
 	 * @param $data
 	 * @return array|bool|string
 	 */
-	public static function unpack($data) {
+	public static function unpack($data, $isJson = false) {
+		if ( $isJson ) {
+			$data = json_decode($data);
+		}
 		return self::decode($data);
 	}
 
+	/**
+	 * Decode Array collection
+	 * @param $data
+	 * @return array|bool
+	 */
 	private static function decode($data) {
 		if((is_array($data) && isset($data[0])) || (isset($data[0]) && !is_string($data[0]))) {
 			return self::parseArray($data);
@@ -250,7 +258,7 @@ class RJson {
 	 * @param $data
 	 * @return array
 	 */
-	public static function parseArray($data) {
+	private static function parseArray($data) {
 		if(count($data) === 0) {
 			return [];
 		} else if ((isset($data[0]) && $data[0] === 0) || (isset($data[0]) && !is_numeric($data[0]))) {
@@ -264,7 +272,7 @@ class RJson {
 	 * @param $data
 	 * @return array|bool
 	 */
-	public static function decodeNewObject($data) {
+	private static function decodeNewObject($data) {
 		if(is_bool($data) || is_null($data)) {
 			return $data;
 		}
@@ -285,7 +293,7 @@ class RJson {
 	 * @param $data
 	 * @return array
 	 */
-	public static function decodeArray($data) {
+	private static function decodeArray($data) {
 		$numberOfSchema = count($data);
 		$decoded = array();
 		for($i = (isset($data[0]) && is_int($data[0]) ? 1 : 0); $i < $numberOfSchema; $i++) {
@@ -310,7 +318,7 @@ class RJson {
 	 * @param $data
 	 * @return array
 	 */
-	public static function decodeObject($data) {
+	private static function decodeObject($data) {
 		$schemaKeys = static::$decodedSchemas[$data[0]];
 		$schemaLength = count($schemaKeys);
 		$total = (count($data) - 1) / $schemaLength;
