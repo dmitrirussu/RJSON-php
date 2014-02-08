@@ -2,7 +2,6 @@
 /**
 
 PHP5 RJson Version 0.1.1
-
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
 
