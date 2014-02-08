@@ -260,7 +260,7 @@ class RJson {
 	 */
 	private static function parseArray($data) {
 		if(count($data) === 0) {
-			return [];
+			return array();
 		} else if ((isset($data[0]) && $data[0] === 0) || (isset($data[0]) && !is_numeric($data[0]))) {
 			return self::decodeArray($data);
 		} else {
