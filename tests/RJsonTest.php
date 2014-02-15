@@ -37,6 +37,7 @@ class RJsonTest extends PHPUnit_Framework_TestCase {
 
 		static::$compressedData = RJson::pack($this->collectionOfData);
 
+
 		print "Data Already Compressed!\n";
 		print_r(static::$compressedData);
 
@@ -65,6 +66,10 @@ class RJsonTest extends PHPUnit_Framework_TestCase {
 	public function testDecompressJsonData() {
 
 		$decompressedData = RJson::unpack(static::$compressedData, $isJson = true);
+
+		print "\n\nDecompressed JSON data\n";
+		print_r($decompressedData);
+
 
 		$this->assertTrue($this->collectionOfData == $decompressedData);
 	}
