@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="../rjson.js" type="text/javascript" language="JavaScript"></script>
+	<script src="rjson.js" type="text/javascript" language="JavaScript"></script>
 	<script src="jquery.js" type="text/javascript" language="JavaScript"></script>
 	<script language="JavaScript" type="text/javascript">
 		jQuery(document).ready(function(){
