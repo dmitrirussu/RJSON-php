@@ -143,6 +143,7 @@ class RJson {
 	 * Example of use RJson::unpack($data);
 	 *
 	 * @param $data
+	 * @param bool $isJson
 	 * @return array|bool|string
 	 */
 	public static function unpack($data, $isJson = false) {
