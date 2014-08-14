@@ -10,6 +10,7 @@
 			"name": "Dmitri Russu",
 			"email": "dmitri.russu@gmail.com"
 		}
+
 	],
 	"autoload": {
 		"psr-0": {
