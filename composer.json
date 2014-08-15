@@ -3,7 +3,7 @@
 	"version": "1.0.2",
 	"type": "library",
 	"description": "Compress array collection data to json",
-	"keywords": ["compress","array", "collection", "archive", "json"],
+	"keywords": ["compress array","compress","array", "collection", "archive", "json","jsonp","json-php"],
 	"license": "GNU",
 	"authors": [
 		{
