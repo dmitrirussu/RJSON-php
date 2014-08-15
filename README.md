@@ -5,7 +5,7 @@
 <img src="https://badge.fury.io/gh/dmitrirussu%2FRJSON-php.svg" alt="GitHub version" height="18">
 </a>
 
-PHP5 RJson Version 0.1.2
+PHP5 RJson Version 1.0.2
 ===
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
