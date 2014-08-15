@@ -1,6 +1,6 @@
 {
 	"name": "dmitrirussu/rjson-php",
-	"version": "1.0.2",
+	"version": "1.0.2.*",
 	"type": "library",
 	"description": "Compress array collection data to json",
 	"keywords": ["compress array","compress","array", "collection", "archive", "json","jsonp","json-php"],
