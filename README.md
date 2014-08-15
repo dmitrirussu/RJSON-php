@@ -1,9 +1,11 @@
 <a href="https://travis-ci.org/dmitrirussu/RJSON-php" target="_balank">
     <img src="https://travis-ci.org/dmitrirussu/RJSON-php.png" data-bindattr-130="130" title="Build Status Images">
 </a>
+<a href="http://badge.fury.io/gh/dmitrirussu%2FRJSON-php">
+<img src="https://badge.fury.io/gh/dmitrirussu%2FRJSON-php.svg" alt="GitHub version" height="18">
+</a>
 
-
-PHP5 RJson Version 0.1.2
+PHP5 RJson Version 1.0.2
 ===
 Copyright (c) 2013, Dmitri Russu <dmitri.russu@gmail.com>
 RJson return compact recursive data Array or Object Array by Algorithm Dmytro Dogadailo <entropyhacker@gmail.com>.
