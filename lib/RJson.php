@@ -53,7 +53,7 @@ class RJson {
 	 */
 	private static function encodeObjectArray($data) {
 		$data = (isset($data[0]) ? $data[0] : $data);
-		if (is_bool($data) || is_null($data)) {
+		if (is_null($data) || is_scalar($data)) {
 			return $data;
 		}
 		ksort($data);
@@ -161,7 +161,7 @@ class RJson {
 	private static function decode($data) {
 		if((is_array($data) && isset($data[0])) || (isset($data[0]) && !is_string($data[0]))) {
 			return self::parseArray($data);
-		} else if (is_string($data) || is_null($data) || is_int($data)) {
+		} else if (is_null($data) || is_scalar($data)) {
 			return $data;
 		} else {
 			return self::decodeNewObject($data);
