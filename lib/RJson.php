@@ -14,10 +14,15 @@
 
 class RJson {
 
-	private static $schemas = array();
 	private static $maxSchemaIndex = 0;
-	private static $decodedSchemas = array();
 	private static $maxDecodedSchemaIndex = 0;
+	private static $schemas = array();
+	private static $decodedSchemas = array();
+
+	private static function resetSchema() {
+		self::$maxSchemaIndex = self::$maxDecodedSchemaIndex = 0;
+		self::$schemas = self::$decodedSchemas = array();
+	}
 
 	/**
 	 * Method RJson::pack($data), return compact array
@@ -27,6 +32,7 @@ class RJson {
 	 * @return array|bool|string
 	 */
 	public static function pack($data, $returnJsonEncode = false) {
+		self::resetSchema();
 		if (!$returnJsonEncode) {
 			return self::encode($data);
 		}
@@ -147,6 +153,8 @@ class RJson {
 	 * @return array|bool|string
 	 */
 	public static function unpack($data, $isJson = false) {
+		self::resetSchema();
+
 		if ( $isJson ) {
 			$data = json_decode($data);
 		}
